@@ -4,6 +4,7 @@ pipeline {
 	triggers {
 		pollSCM 'H/10 * * * *'
 		cron '@daily'
+		git credentialsId: 'GitHub', url: 'https://github.com/Ramesh0107/spring-data-build.git'
 	}
 
 	options {
